@@ -1,0 +1,18 @@
+{
+    "id": 2950733,
+    "name": "legacy-system-filepath",
+    "target": "push",
+    "source_type": "Repository",
+    "source": "ghsioux/cool-rulesets",
+    "enforcement": "active",
+    "conditions": null,
+    "rules": [
+      {
+        "type": "max_file_path_length",
+        "parameters": {
+          "max_file_path_length": 255
+        }
+      }
+    ],
+    "bypass_actors": []
+}

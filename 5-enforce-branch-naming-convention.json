@@ -1,0 +1,24 @@
+{
+    "id": 3139547,
+    "name": "enforce-branch-naming-convention",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "ghsioux/cool-rulesets",
+    "enforcement": "active",
+    "conditions": {
+      "ref_name": {
+        "exclude": [
+          "refs/heads/releases/**/*",
+          "refs/heads/feature/**/*",
+          "refs/heads/hotfix/**/*"
+        ],
+        "include": []
+      }
+    },
+    "rules": [
+      {
+        "type": "creation"
+      }
+    ],
+    "bypass_actors": []
+}

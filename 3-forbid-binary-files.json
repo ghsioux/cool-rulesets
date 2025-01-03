@@ -1,0 +1,27 @@
+{
+    "id": 3003094,
+    "name": "forbid-binary-files",
+    "target": "push",
+    "source_type": "Repository",
+    "source": "ghsioux/cool-rulesets",
+    "enforcement": "active",
+    "conditions": null,
+    "rules": [
+      {
+        "type": "file_extension_restriction",
+        "parameters": {
+          "restricted_file_extensions": [
+            "*.exe", "*.bin", "*.dll", "*.so", "*.dmg", "*.msi", "*.app",
+            "*.zip", "*.tar", "*.gz", "*.rar", "*.7z", "*.xz", "*.bz2",
+            "*.iso", "*.vmdk", "*.qcow2", "*.img",
+            "*.dat", "*.db", "*.sqlite", "*.bak", "*.ldf", "*.mdf",
+            "*.ttf", "*.otf", "*.woff", "*.woff2", "*.eot",
+            "*.dwg", "*.dxf", "*.stl", "*.3ds", "*.obj",
+            "*.doc", "*.docx", "*.xls", "*.xlsx", "*.ppt", "*.pptx", 
+            "*.pdf", "*.swp", "*.tmp", "*.bak"
+          ]
+        }
+      }
+    ],
+    "bypass_actors": []
+}
